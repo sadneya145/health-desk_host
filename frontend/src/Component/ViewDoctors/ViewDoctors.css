@@ -1,0 +1,152 @@
+/* Updated container styling */
+.doctors-container {
+  padding: 4rem 2rem;
+  background: linear-gradient(120deg, #f0f4ff, #d9effc);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+/* Heading styling */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #0056b3;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Slight shadow for emphasis */
+}
+
+/* Filter container styling */
+.filter-container {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+/* Dropdown filter with modern styling */
+.specialization-filter {
+  padding: 0.8rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 2px solid #0056b3;
+  outline: none;
+  width: 300px;
+  background-color: #fff;
+  color: #0056b3;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative; /* For custom arrow styling */
+}
+
+/* Add custom arrow */
+.specialization-filter::after {
+  content: '▼';
+  font-size: 0.8rem;
+  color: #0056b3;
+  position: absolute;
+  right: 20px; /* Adjusted position for better alignment */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.specialization-filter:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Change arrow color on hover */
+.specialization-filter:hover::after {
+  color: #fff;
+}
+
+/* Style for doctor cards container */
+.doctor-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  margin-top: 3rem;
+  padding: 0 2rem;
+}
+
+/* Individual doctor card styles */
+.doctor-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.doctor-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling inside the card */
+.doctor-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 3px solid #0056b3;
+  margin-bottom: 1.5rem;
+}
+
+/* Information inside the card */
+.doctor-info h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.doctor-info .specialization {
+  font-size: 1rem;
+  color: #0056b3;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.doctor-info .bio {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.doctor-info .location {
+  font-size: 1rem;
+  color: #0056b3;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .specialization-filter {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,152 @@
+/* Main container */
+.hospital-locator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px; /* Offset for the header */
+  background-color: #f4f5f7;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+/* Page Title Styling */
+.page-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Main content area */
+.main-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Map container styling */
+.map-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* List container styling */
+.hospitals-list {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.hospitals-list h3 {
+  text-align: center;
+  font-size: 28px;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+/* Hospital Item */
+.hospital-item {
+  background: #ecf0f1;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
+  border: 1px solid #dcdde1;
+}
+
+.hospital-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hospital-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hospital-item h4 {
+  color: #2980b9;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+}
+
+.address,
+.phone {
+  font-size: 14px;
+  color: #2c3e50;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+/* Appointment Button */
+.book-appointment-btn {
+  background: #27ae60;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px;
+  text-align: center;
+}
+
+.book-appointment-btn:hover {
+  background: #2ecc71;
+}
+
+/* Tooltip Styling */
+.leaflet-tooltip {
+  background-color: #27ae60;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .map-container {
+    height: 400px;
+  }
+
+  .hospitals-list {
+    padding: 15px;
+  }
+
+  .hospital-item {
+    padding: 15px;
+  }
+
+  .book-appointment-btn {
+    width: 100px;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 28px;
+  }
+
+  .hospital-item {
+    padding: 12px;
+  }
+}

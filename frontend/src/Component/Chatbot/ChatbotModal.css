@@ -1,0 +1,90 @@
+.chatbot-modal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+.chatbot-icon {
+  width: 80px;
+  height: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #d6e6f4;
+  box-shadow: 0 4px 8px #000;
+}
+
+.chatbot-popup {
+  position: fixed;
+  bottom: 70px;
+  right: 600px;
+  width: 90%;
+  max-width: 700px;
+  max-height: 80vh;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow-y: auto;
+  z-index: 1050;
+}
+
+.chatbot-popup-content {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.chatbot-msg {
+  display: none;
+  position: absolute;
+  bottom: 100px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1100;
+}
+
+.chatbot-msg.show {
+  display: block;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .chatbot-popup {
+      right: 10px;  /* Adjust right positioning for larger screens */
+      width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .chatbot-popup {
+      right: 0;    /* Adjust right positioning for tablets */
+      width: 90%;
+  }
+
+  .chatbot-popup-content {
+      padding: 15px;  /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .chatbot-popup {
+      width: 95%;
+      bottom: 10px;
+      right: 10px;
+  }
+
+  .chatbot-popup-content {
+      padding: 10px;  /* Further reduce padding for mobile screens */
+  }
+}
