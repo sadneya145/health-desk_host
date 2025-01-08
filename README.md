@@ -1,9 +1,14 @@
 Introduction
+
 Accessing quality healthcare is more important than ever, but the process often feels unnecessarily complicated. From managing appointments to finding the right doctor or hospital, patients and healthcare providers face multiple hurdles that can delay timely care.
+
 To tackle these challenges, we created Health Desk, a comprehensive e-healthcare platform that makes healthcare more accessible and user-friendly. Our app combines a variety of features, including an interactive hospital locator, an AI-powered chatbot for round-the-clock consultations, and a smart appointment scheduler to prevent double-booking.
+
 The project was developed during a hackathon, where the focus was on leveraging multiple APIs to build a high-functioning application. By integrating advanced technology and a user-first approach, Health Desk aims to bridge the gap between patients and healthcare professionals, offering a seamless experience for everyone involved.
 Problem Statement
+
 Healthcare systems today often struggle to keep up with the growing demands of patients and healthcare providers. Key challenges include:
+
 Difficulty in Accessing Nearby Healthcare Facilities: Many patients face challenges locating hospitals or clinics that meet their needs, especially during emergencies.
 Inefficient Appointment Scheduling: Overlapping or conflicting appointments can disrupt patient care and strain healthcare providers.
 Limited Access to Immediate Medical Advice: Patients often lack an easy way to get quick, reliable medical consultation without visiting a doctor in person.
@@ -12,13 +17,17 @@ These gaps result in delayed care, increased workload for healthcare providers, 
 
 
 **Installation**
+
 Terminal 1:
 > cd frontend
+
 > npm install
+
 > npm start
 
 Terminal 2:
 >cd backend
+
 >npm start
 
 
