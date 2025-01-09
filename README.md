@@ -34,21 +34,35 @@ Terminal 2:
 Key Features of Health Desk
 Health Desk is packed with features designed to simplify healthcare access and improve the patient experience. Here's what makes our platform stand out:
 1. Interactive Hospital Locator
+  ![Screenshot 2025-01-07 105214](https://github.com/user-attachments/assets/aa049dbf-3088-4b35-bff8-bdfd7c0149f2)
+
+
 Using map integration, users can quickly find hospitals in their area with detailed, interactive features. Whether it’s checking proximity, availability, or specialties, this tool ensures patients can make informed decisions.
 
 2. AI-Powered Chatbot
+   ![Screenshot 2025-01-07 105136](https://github.com/user-attachments/assets/2ced812e-6016-4fed-b3e3-14e6cc4654a0)
+
 Our 24/7 AI-powered chatbot provides instant medical consultation, offering guidance on symptoms, potential treatments, and next steps—all without waiting for a human response.
 
 3. Smart Appointment Scheduling
+   ![Screenshot 2025-01-07 105223](https://github.com/user-attachments/assets/c9f64119-0f33-4e45-b3a7-cdee9c5900a8)
+
 The scheduling system prevents overlapping or double-booked appointments, ensuring doctors can manage their time effectively while patients experience a hassle-free booking process. The backend is connected to a database that dynamically fetches doctor availability in real-time.
 
 4. Video Consultation Integration
+   ![Screenshot 2025-01-07 105637](https://github.com/user-attachments/assets/fffc663f-cd9d-470a-8ca0-24cc781a72ec)
+
 Patients can easily schedule and join video calls for online consultations. This feature makes remote healthcare both accessible and convenient, especially for follow-ups or non-critical issues.
 
 5. Patient Records Dashboard
+   ![Admin png](https://github.com/user-attachments/assets/10d35580-7398-4142-a030-3b8c65823d31)
+
 The dashboard provides a centralized view of patient information, including medical history, prescriptions, and test results. This makes it easier for both patients and doctors to track healthcare progress.
 
 6. Google OAuth for Easy Login
+   ![Screenshot 2025-01-07 091812](https://github.com/user-attachments/assets/6ec6c9fc-67e6-4b85-a418-973bcf53777c)
+
+
 To simplify onboarding, users can log in using their Google accounts through Firebase. This saves time and reduces the need for lengthy registration processes.
 
 Each feature has been thoughtfully designed to create a seamless, user-friendly experience that addresses real-world healthcare challenges.
