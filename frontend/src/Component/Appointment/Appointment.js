@@ -30,7 +30,7 @@ const AppointmentScheduler = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/doctors');
+        const response = await fetch('https://health-desk-backend.onrender.com/api/doctors');
         if (!response.ok) {
           throw new Error('Failed to fetch doctors');
         }
@@ -68,7 +68,7 @@ const AppointmentScheduler = () => {
 
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/appointments', {
+      const response = await fetch('https://health-desk-backend.onrender.com/api/appointments', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
