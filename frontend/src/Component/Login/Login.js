@@ -30,7 +30,7 @@ const Login = () => {
 
       // Fetch user role and data from MongoDB
       const response = await axios.get(
-        `http://localhost:5000/api/users/${firebaseUser.email}`
+        `https://health-desk-backend.onrender.com/api/users/${firebaseUser.email}`
       );
       const userData = response.data;
 
