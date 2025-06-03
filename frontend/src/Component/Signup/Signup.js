@@ -25,7 +25,7 @@ const Signup = () => {
         role: role,
       };
 
-      const response = await axios.post('http://localhost:5000/api/users', newUser);
+      const response = await axios.post('https://health-desk-backend.onrender.com/api/users', newUser);
       Swal.fire('Success!', 'You have successfully signed up!', 'success');
       window.location.href = '/home';
     } catch (err) {
@@ -51,7 +51,7 @@ const Signup = () => {
         role: role,
       };
 
-      await axios.post('http://localhost:5000/api/users', newUser);
+      await axios.post('https://health-desk-backend.onrender.com/api/users', newUser);
       Swal.fire('Success!', 'You have successfully signed up!', 'success');
       window.location.href = '/home';
     } catch (err) {
